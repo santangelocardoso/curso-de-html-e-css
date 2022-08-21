@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            
+        }
+        a {
+            color: darkgreen;
+            text-decoration: none;
+        
+        }
+        a:visited {
+            color: darkmagenta;
+        }
+        a:hover {
+            text-decoration-line: underline;
+            color: red;
+        }
+        a::after {
+            content: '(link)';
+            color: rgb(131, 137, 135);
+        }
+        .especial::after {
+            content: '(✓)';
+
+        }
+        .social::before {
+            content: '(♕)';           
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com links</h1>
+    <a href="www.uol.com.br">Site de notícias UOL</a> <br>
+    face da aline <a href="https://www.facebook.com/aline.santangelo1" class="social">facebook</a> teste <br>
+    <a href="www.google.com.br" class="especial">google</a>
+    
+</body>
+</html>
